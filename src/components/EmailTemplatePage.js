@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic';
 import Header from '@/components/Header';
 import { Highlight, themes } from 'prism-react-renderer';
 import { ArrowLeftIcon, CodeBracketIcon } from '@heroicons/react/24/outline';
+import Footer from './Footer';
 
 const MjmlRenderer = dynamic(() => import('@/components/MjmlRenderer'), { ssr: false });
 
@@ -22,9 +23,9 @@ export default function EmailTemplatePage({ moduleName, templateName, mjmlConten
     return (
         <div className="min-h-screen p-20 font-sans bg-gray-50">
             <Header />
-            
+
             <Link href="/" className="text-blue-500 hover:text-blue-600 transition-colors mb-8 inline-flex items-center">
-                <ArrowLeftIcon className="h-5 w-5 mr-2" /> 
+                <ArrowLeftIcon className="h-5 w-5 mr-2" />
                 Back to Templates
             </Link>
 
@@ -98,9 +99,7 @@ export default function EmailTemplatePage({ moduleName, templateName, mjmlConten
                 </div>
             )}
 
-            <footer className="mt-16 text-center text-gray-500">
-                <p>Crafted with passion by aliftan</p>
-            </footer>
+            <Footer />
         </div>
     );
 }

@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from "react";
 import Header from '@/components/Header';
 import { emailTemplates } from './emailTemplates';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   const [activeModule, setActiveModule] = useState("Account Management");
@@ -51,9 +52,7 @@ export default function Home() {
         ))}
       </main>
 
-      <footer className="mt-16 text-center text-gray-500">
-        <p>Crafted with passion 💖</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
