@@ -1,6 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ✉️ Zero Mail Showcase
 
-## Getting Started
+Zero Mail Showcase is a Next.js application that provides a collection of email templates for various scenarios. It's designed to help developers and marketers quickly access and customize professional email templates for different business needs.
+
+## ✨ Features
+
+- 📂 A wide range of email templates categorized by use case
+- 🖥️ Web and 📱 mobile preview modes for each template
+- 🔍 Easy navigation between different template categories
+- 📐 Responsive design for optimal viewing on various devices
+
+## 📑 Template Categories
+
+Our showcase includes templates for:
+
+- 🛠️ **Account Management**
+- 🛒 **Orders**
+- 🔄 **Returns and Refunds**
+- 🛍️ **Cart and Checkout**
+- 📦 **Product Interactions**
+- 💬 **Customer Engagement**
+- 🆘 **Customer Support**
+- 🎁 **Promotions and Loyalty**
+- 🎟️ **Vouchers and Promo Codes**
+
+## 🚀 Getting Started
 
 First, run the development server:
 
@@ -16,21 +39,25 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Technology Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **MJML**: A markup language designed to reduce the pain of coding responsive email templates.
 
-## Learn More
+## 📚 Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 📖 [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- 🎓 [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📬 Contact
 
-## Deploy on Vercel
+For any inquiries or support regarding Zero Mail Showcase, please contact:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📧 Email: aliftan29@gmail.com
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We welcome your feedback and are happy to assist with any questions you may have about the project.
