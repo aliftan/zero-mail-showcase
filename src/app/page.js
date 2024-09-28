@@ -9,6 +9,9 @@ const emailTemplates = {
     { name: "Welcome Email", path: "/account-management/welcome", description: "Greet new users and guide them through next steps" },
     { name: "Password Reset", path: "/account-management/password-reset", description: "Help users securely reset their password" },
     { name: "Account Update Confirmation", path: "/account-management/account-update", description: "Confirm changes made to user account details" },
+    { name: "Email OTP Signup Verification", path: "/account-management/otp-verification", description: "Send one-time password for email verification during signup" },
+    { name: "Login Log", path: "/account-management/login-log", description: "Notify users of recent login activity on their account" },
+    { name: "Account Deletion Request", path: "/account-management/deletion-request", description: "Confirm receipt of account deletion request and provide next steps" },
   ],
   "Orders": [
     { name: "Order Placed", path: "/orders/order-placed", description: "Confirm receipt of a new order" },
@@ -48,6 +51,12 @@ const emailTemplates = {
     { name: "Level-up Promo Code", path: "/loyalty/level-up-promo", description: "Reward customers for reaching a new loyalty tier" },
     { name: "Points Earned Notification", path: "/loyalty/points-earned", description: "Inform customers of new loyalty points earned" },
     { name: "Reward Redemption Confirmation", path: "/loyalty/reward-redeemed", description: "Confirm successful redemption of loyalty rewards" },
+  ],
+  "E-Wallet": [
+    { name: "Top-up Confirmation", path: "/ewallet/topup-confirmation", description: "Confirm successful top-up of funds to the e-wallet" },
+    { name: "Withdrawal Confirmation", path: "/ewallet/withdrawal-confirmation", description: "Confirm successful withdrawal of funds from the e-wallet" },
+    { name: "Transfer Notification", path: "/ewallet/transfer-notification", description: "Notify user of a successful transfer to/from their e-wallet" },
+    { name: "Transaction Receipt", path: "/ewallet/transaction-receipt", description: "Provide a detailed receipt for a wallet balance transaction" },
   ],
   "Vouchers and Promo Codes": [
     { name: "Voucher/Promo Code Issued", path: "/vouchers/code-issued", description: "Deliver a new voucher or promo code to customers" },

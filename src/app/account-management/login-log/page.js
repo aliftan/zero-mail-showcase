@@ -1,6 +1,6 @@
 import EmailTemplatePage from '@/components/EmailTemplatePage';
 
-const welcomeMjml = `
+const loginLogMjml = `
 <mjml>
   <mj-head>
     <mj-attributes>
@@ -16,15 +16,21 @@ const welcomeMjml = `
     
     <mj-section background-color="#ffffff" padding="20px" border-radius="8px">
       <mj-column>
-        <mj-text font-size="24px" color="#333333" align="center">Welcome to Our Service!</mj-text>
+        <mj-text font-size="24px" color="#333333" align="center">New Login Detected</mj-text>
         <mj-text font-size="16px" color="#555555">
           Dear {{name}},
           <br><br>
-          Thank you for joining us. We're excited to have you on board!
+          We detected a new login to your account. Here are the details:
           <br><br>
-          If you have any questions, feel free to reply to this email.
+          Date and Time: {{loginDateTime}}
+          <br>
+          Location: {{loginLocation}}
+          <br>
+          Device: {{deviceInfo}}
+          <br><br>
+          If this was you, no further action is needed. If you don't recognize this activity, please secure your account immediately.
         </mj-text>
-        <mj-button background-color="#F45E43" color="#ffffff" href="{{loginUrl}}">Get Started</mj-button>
+        <mj-button background-color="#F45E43" color="#ffffff" href="{{securitySettingsUrl}}">Review Account Security</mj-button>
       </mj-column>
     </mj-section>
     
@@ -48,12 +54,12 @@ const welcomeMjml = `
 </mjml>
 `;
 
-export default function WelcomeEmailPage() {
-  return (
-    <EmailTemplatePage
-      moduleName="Account Management"
-      templateName="Welcome Email"
-      mjmlContent={welcomeMjml}
-    />
-  );
+export default function LoginLogPage() {
+    return (
+        <EmailTemplatePage
+            moduleName="Account Management"
+            templateName="Login Log"
+            mjmlContent={loginLogMjml}
+        />
+    );
 }

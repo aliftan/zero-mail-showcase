@@ -1,6 +1,6 @@
 import EmailTemplatePage from '@/components/EmailTemplatePage';
 
-const welcomeMjml = `
+const otpVerificationMjml = `
 <mjml>
   <mj-head>
     <mj-attributes>
@@ -16,15 +16,18 @@ const welcomeMjml = `
     
     <mj-section background-color="#ffffff" padding="20px" border-radius="8px">
       <mj-column>
-        <mj-text font-size="24px" color="#333333" align="center">Welcome to Our Service!</mj-text>
+        <mj-text font-size="24px" color="#333333" align="center">Verify Your Email</mj-text>
         <mj-text font-size="16px" color="#555555">
-          Dear {{name}},
+          Dear User,
           <br><br>
-          Thank you for joining us. We're excited to have you on board!
-          <br><br>
-          If you have any questions, feel free to reply to this email.
+          Thank you for signing up! To complete your registration, please use the following One-Time Password (OTP) to verify your email address:
         </mj-text>
-        <mj-button background-color="#F45E43" color="#ffffff" href="{{loginUrl}}">Get Started</mj-button>
+        <mj-text font-size="32px" color="#F45E43" align="center" font-weight="bold">
+          {{otpCode}}
+        </mj-text>
+        <mj-text font-size="14px" color="#888888">
+          This OTP will expire in 10 minutes. If you didn't request this verification, please ignore this email.
+        </mj-text>
       </mj-column>
     </mj-section>
     
@@ -48,12 +51,12 @@ const welcomeMjml = `
 </mjml>
 `;
 
-export default function WelcomeEmailPage() {
-  return (
-    <EmailTemplatePage
-      moduleName="Account Management"
-      templateName="Welcome Email"
-      mjmlContent={welcomeMjml}
-    />
-  );
+export default function OtpVerificationPage() {
+    return (
+        <EmailTemplatePage
+            moduleName="Account Management"
+            templateName="Email OTP Signup Verification"
+            mjmlContent={otpVerificationMjml}
+        />
+    );
 }

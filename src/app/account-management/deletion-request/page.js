@@ -1,6 +1,6 @@
 import EmailTemplatePage from '@/components/EmailTemplatePage';
 
-const welcomeMjml = `
+const deletionRequestMjml = `
 <mjml>
   <mj-head>
     <mj-attributes>
@@ -16,15 +16,26 @@ const welcomeMjml = `
     
     <mj-section background-color="#ffffff" padding="20px" border-radius="8px">
       <mj-column>
-        <mj-text font-size="24px" color="#333333" align="center">Welcome to Our Service!</mj-text>
+        <mj-text font-size="24px" color="#333333" align="center">Account Deletion Request</mj-text>
         <mj-text font-size="16px" color="#555555">
           Dear {{name}},
           <br><br>
-          Thank you for joining us. We're excited to have you on board!
+          We have received your request to delete your account. We're sorry to see you go.
           <br><br>
-          If you have any questions, feel free to reply to this email.
+          Please note:
+          <br>
+          - This process will permanently delete all your data and cannot be undone.
+          <br>
+          - Any active subscriptions will be cancelled.
+          <br>
+          - You have 14 days to change your mind before the deletion is final.
+          <br><br>
+          If you wish to proceed with the account deletion, please click the button below:
         </mj-text>
-        <mj-button background-color="#F45E43" color="#ffffff" href="{{loginUrl}}">Get Started</mj-button>
+        <mj-button background-color="#F45E43" color="#ffffff" href="{{confirmDeletionUrl}}">Confirm Account Deletion</mj-button>
+        <mj-text font-size="14px" color="#888888">
+          If you didn't request this deletion or have changed your mind, please ignore this email or contact our support team.
+        </mj-text>
       </mj-column>
     </mj-section>
     
@@ -48,12 +59,12 @@ const welcomeMjml = `
 </mjml>
 `;
 
-export default function WelcomeEmailPage() {
-  return (
-    <EmailTemplatePage
-      moduleName="Account Management"
-      templateName="Welcome Email"
-      mjmlContent={welcomeMjml}
-    />
-  );
+export default function DeletionRequestPage() {
+    return (
+        <EmailTemplatePage
+            moduleName="Account Management"
+            templateName="Account Deletion Request"
+            mjmlContent={deletionRequestMjml}
+        />
+    );
 }
