@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useState } from "react";
-import Header from "@/components/Header";
+import Header from '@/components/Header';
 
 const emailTemplates = {
   "Account Management": [
@@ -83,7 +83,7 @@ export default function Home() {
             <li key={module}>
               <button
                 onClick={() => setActiveModule(module)}
-                className={`px-6 py-3 rounded-full text-sm font-medium shadow-sm transition-all duration-300 ease-in-out
+                className={`px-6 py-3 rounded-full text-sm font-medium shadow-sm duration-300 ease-in-out transition hover:scale-110 border border-gray-200
                   ${activeModule === module
                     ? 'bg-blue-500 text-white shadow-lg scale-105'
                     : 'bg-white text-gray-700 hover:bg-gray-100'
@@ -98,7 +98,7 @@ export default function Home() {
 
       <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {emailTemplates[activeModule].map((template) => (
-          <div key={template.name} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 ease-in-out hover:scale-105">
+          <div key={template.name} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 ease-in-out hover:scale-110">
             <h2 className="text-xl font-semibold mb-3 text-gray-800">{template.name}</h2>
             <p className="text-gray-600 mb-4 h-12 overflow-hidden">{template.description}</p>
             <button
