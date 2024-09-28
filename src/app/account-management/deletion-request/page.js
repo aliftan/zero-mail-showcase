@@ -5,12 +5,14 @@ const deletionRequestMjml = `
   <mj-head>
     <mj-attributes>
       <mj-all font-family="Arial, sans-serif" />
+      <mj-text font-size="14px" color="#555555" line-height="20px" />
+      <mj-section background-color="#ffffff" padding="20px" />
     </mj-attributes>
   </mj-head>
   <mj-body background-color="#f4f4f4">
-    <mj-section padding-top="20px" padding-bottom="20px">
+    <mj-section padding-bottom="0" background-color="#1a2b49">
       <mj-column width="100%">
-        <mj-image src="https://via.placeholder.com/150x50" alt="Logo" align="center" width="150px" />
+        <mj-image src="https://via.placeholder.com/200x50/1a2b49/ffffff?text=Your+Logo" alt="Logo" align="center" width="200px" />
       </mj-column>
     </mj-section>
     
@@ -39,7 +41,7 @@ const deletionRequestMjml = `
       </mj-column>
     </mj-section>
     
-    <mj-section padding-top="20px" padding-bottom="20px">
+    <mj-section padding-top="20px" background-color="#f4f4f4">
       <mj-column>
         <mj-social font-size="15px" icon-size="30px" mode="horizontal">
           <mj-social-element name="facebook" href="https://facebook.com/yourcompany" />
@@ -51,7 +53,7 @@ const deletionRequestMjml = `
           © 2024 Your E-commerce Company. All rights reserved.
         </mj-text>
         <mj-text align="center" font-size="12px" color="#555555">
-          Need help? Contact our support team at <a href="mailto:support@yourcompany.com" style="color: #F45E43;">support@yourcompany.com</a>
+          Need help? Contact our support team at <a href="mailto:support@yourcompany.com" style="color: #1a2b49;">support@yourcompany.com</a>
         </mj-text>
       </mj-column>
     </mj-section>
