@@ -24,7 +24,7 @@ const passwordResetMjml = `
           <br><br>
           To reset your password, click the button below:
         </mj-text>
-        <mj-button background-color="#F45E43" color="#ffffff" href="{{resetUrl}}">Reset Password</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{resetUrl}}">Reset Password</mj-button>
         <mj-text font-size="14px" color="#888888">
           This link will expire in 24 hours. If you need assistance, please contact our support team.
         </mj-text>

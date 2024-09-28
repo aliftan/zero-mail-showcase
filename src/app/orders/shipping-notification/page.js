@@ -122,7 +122,7 @@ const shippingNotificationMjml = `
         <mj-text>
           If you have any questions about your order, please don't hesitate to contact our customer support team.
         </mj-text>
-        <mj-button background-color="#1a2b49" color="#ffffff" href="{{trackingUrl}}">Track Your Package</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{trackingUrl}}">Track Your Package</mj-button>
       </mj-column>
     </mj-section>
     

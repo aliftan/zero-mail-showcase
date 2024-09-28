@@ -74,7 +74,7 @@ const abandonedCartMjml = `
         <mj-text>
           These items are still waiting for you. Complete your purchase now before they sell out!
         </mj-text>
-        <mj-button background-color="#1a2b49" color="#ffffff" href="{{cartUrl}}">Complete Your Purchase</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{cartUrl}}">Complete Your Purchase</mj-button>
       </mj-column>
     </mj-section>
 

@@ -30,7 +30,7 @@ const loginLogMjml = `
           <br><br>
           If this was you, no further action is needed. If you don't recognize this activity, please secure your account immediately.
         </mj-text>
-        <mj-button background-color="#F45E43" color="#ffffff" href="{{securitySettingsUrl}}">Review Account Security</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{securitySettingsUrl}}">Review Account Security</mj-button>
       </mj-column>
     </mj-section>
     

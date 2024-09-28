@@ -26,7 +26,7 @@ const accountUpdateMjml = `
           <br><br>
           If you did not make these changes, please contact our support team immediately.
         </mj-text>
-        <mj-button background-color="#F45E43" color="#ffffff" href="{{accountUrl}}">View Account</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{accountUrl}}">View Account</mj-button>
       </mj-column>
     </mj-section>
     

@@ -67,7 +67,7 @@ const returnRequestReceivedMjml = `
           <br>
           3. After we receive and inspect the item, we'll process your refund.
         </mj-text>
-        <mj-button background-color="#1a2b49" color="#ffffff" href="{{returnStatusUrl}}">Check Return Status</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{returnStatusUrl}}">Check Return Status</mj-button>
       </mj-column>
     </mj-section>
     

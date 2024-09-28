@@ -69,7 +69,7 @@ const returnApprovedMjml = `
           <br>
           4. Drop off the package at any {{shippingCarrier}} location.
         </mj-text>
-        <mj-button background-color="#1a2b49" color="#ffffff" href="{{printLabelUrl}}">Print Return Label</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{printLabelUrl}}">Print Return Label</mj-button>
       </mj-column>
     </mj-section>
 

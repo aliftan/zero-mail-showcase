@@ -111,7 +111,7 @@ const deliveryConfirmationMjml = `
     <mj-section background-color="#ffffff" padding-top="20px">
       <mj-column>
         <mj-text>We hope you're satisfied with your purchase. If you have any issues or questions about your order, please don't hesitate to contact us.</mj-text>
-        <mj-button background-color="#1a2b49" color="#ffffff" href="{{reviewUrl}}">Leave a Review</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{reviewUrl}}">Leave a Review</mj-button>
       </mj-column>
     </mj-section>
     

@@ -120,7 +120,7 @@ const orderPlacedMjml = `
           <strong>Estimated Delivery Date:</strong> {{estimatedDeliveryDate}}
         </mj-text>
         <mj-text>We'll send you another email when your order ships.</mj-text>
-        <mj-button background-color="#1a2b49" color="#ffffff" href="{{orderDetailsUrl}}">View Order Details</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{orderDetailsUrl}}">View Order Details</mj-button>
       </mj-column>
     </mj-section>
     

@@ -101,7 +101,7 @@ const orderPaidMjml = `
           <strong>Transaction ID:</strong> {{transactionId}}
         </mj-text>
         <mj-text>Your order is now being processed and will be shipped soon.</mj-text>
-        <mj-button background-color="#1a2b49" color="#ffffff" href="{{invoiceUrl}}">View Invoice</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{invoiceUrl}}">View Invoice</mj-button>
       </mj-column>
     </mj-section>
     

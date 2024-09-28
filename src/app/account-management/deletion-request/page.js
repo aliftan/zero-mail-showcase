@@ -32,7 +32,7 @@ const deletionRequestMjml = `
           <br><br>
           If you wish to proceed with the account deletion, please click the button below:
         </mj-text>
-        <mj-button background-color="#F45E43" color="#ffffff" href="{{confirmDeletionUrl}}">Confirm Account Deletion</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{confirmDeletionUrl}}">Confirm Account Deletion</mj-button>
         <mj-text font-size="14px" color="#888888">
           If you didn't request this deletion or have changed your mind, please ignore this email or contact our support team.
         </mj-text>

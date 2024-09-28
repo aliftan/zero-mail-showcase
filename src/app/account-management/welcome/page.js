@@ -24,7 +24,7 @@ const welcomeMjml = `
           <br><br>
           If you have any questions, feel free to reply to this email.
         </mj-text>
-        <mj-button background-color="#F45E43" color="#ffffff" href="{{loginUrl}}">Get Started</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{loginUrl}}">Get Started</mj-button>
       </mj-column>
     </mj-section>
     

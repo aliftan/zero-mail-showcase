@@ -101,7 +101,7 @@ const orderCanceledMjml = `
     <mj-section background-color="#ffffff" padding-top="20px">
       <mj-column>
         <mj-text>If you didn't request this cancellation or have any questions, please contact our support team immediately.</mj-text>
-        <mj-button background-color="#1a2b49" color="#ffffff" href="{{supportUrl}}">Contact Support</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{supportUrl}}">Contact Support</mj-button>
       </mj-column>
     </mj-section>
     

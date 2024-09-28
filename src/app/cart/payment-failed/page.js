@@ -66,7 +66,7 @@ const paymentFailedMjml = `
           <br>
           3. Try the payment again by clicking the button below.
         </mj-text>
-        <mj-button background-color="#1a2b49" color="#ffffff" href="{{retryPaymentUrl}}">Retry Payment</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{retryPaymentUrl}}">Retry Payment</mj-button>
       </mj-column>
     </mj-section>
 

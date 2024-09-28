@@ -119,7 +119,7 @@ const orderConfirmationMjml = `
           <br>
           <strong>Estimated Delivery Date:</strong> {{estimatedDeliveryDate}}
         </mj-text>
-        <mj-button background-color="#1a2b49" color="#ffffff" href="{{trackOrderUrl}}">Track Your Order</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{trackOrderUrl}}">Track Your Order</mj-button>
       </mj-column>
     </mj-section>
     

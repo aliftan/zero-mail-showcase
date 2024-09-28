@@ -85,7 +85,7 @@ const refundProcessedMjml = `
         <mj-text>
           If you have any questions about this refund or if you don't see the refund in your account after 10 business days, please don't hesitate to contact our customer support team.
         </mj-text>
-        <mj-button background-color="#1a2b49" color="#ffffff" href="{{orderHistoryUrl}}">View Order History</mj-button>
+        <mj-button background-color="#e74c3c" color="#ffffff" href="{{orderHistoryUrl}}">View Order History</mj-button>
       </mj-column>
     </mj-section>
     
