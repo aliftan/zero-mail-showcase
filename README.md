@@ -22,15 +22,21 @@ Zero Mail Showcase is a Next.js application that provides a collection of email 
 
 Our showcase includes templates for:
 
-- 🛠️ **Account Management**
-- 🛒 **Orders**
-- 🔄 **Returns and Refunds**
-- 🛍️ **Cart and Checkout**
-- 📦 **Product Interactions**
-- 💬 **Customer Engagement**
-- 🆘 **Customer Support**
-- 🎁 **Promotions and Loyalty**
-- 🎟️ **Vouchers and Promo Codes**
+| Category | Templates |
+|----------|-----------|
+| 🛠️ **Account Management** | • Welcome Email<br>• Password Reset<br>• Account Update Confirmation<br>• Email OTP Signup Verification<br>• Login Log<br>• Account Deletion Request |
+| 🛒 **Orders** | • Order Placed<br>• Order Confirmation<br>• Order Paid<br>• Order Canceled<br>• Shipping Notification<br>• Delivery Confirmation |
+| 🔄 **Returns and Refunds** | • Return Request Received<br>• Return Approved<br>• Refund Processed |
+| 🛍️ **Cart and Checkout** | • Abandoned Cart Reminder<br>• Payment Failed |
+| 📦 **Product Interactions** | • Product Review Request<br>• Back-in-stock Notification<br>• Wishlist Item on Sale |
+| 💬 **Customer Engagement** | • Newsletter<br>• Special Offers/Promotions<br>• New Product Announcements<br>• Customer Feedback Survey |
+| 🆘 **Customer Support** | • Support Ticket Opened<br>• Support Ticket Updated<br>• Support Ticket Resolved |
+| 🎁 **Promotions and Loyalty** | • Birthday Voucher<br>• Level-up Promo Code<br>• Points Earned Notification<br>• Reward Redemption Confirmation |
+| 🎟️ **Vouchers and Promo Codes** | • Voucher/Promo Code Issued<br>• Voucher/Promo Code Expiry Reminder<br>• Successful Voucher/Promo Code Usage<br>• Voucher/Promo Code Expired |
+| 📅 **Appointment Bookings** | • Appointment Sent<br>• Appointment Confirmed<br>• Appointment Rescheduled<br>• Appointment Reschedule Requested<br>• Appointment Canceled<br>• Appointment Completed<br>• Appointment Review Request |
+| 🏆 **Memberships** | • Membership Upgraded<br>• Membership Expiry Reminder<br>• Membership Expired<br>• Membership Level Up<br>• Membership Rewards Received |
+| 📂 **Projects** | • Project Invitation<br>• Task Assignment<br>• Task Mention<br>• Task Due Reminder<br>• Project Archived<br>• Project Deleted<br>• Monthly Tasks Report |
+| 💳 **Invoices** | • Invoice Issued<br>• Invoice Paid<br>• Invoice Partially Paid<br>• Invoice Overdue<br>• Invoice Voided |
 
 ## 🚀 Getting Started
 
