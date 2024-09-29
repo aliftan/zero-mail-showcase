@@ -89,5 +89,12 @@ export const emailTemplates = {
         { name: "Invoice Partially Paid", path: "/invoices/partially-paid", description: "Inform customer about a partial payment on an invoice" },
         { name: "Invoice Overdue", path: "/invoices/overdue", description: "Alert customer about an overdue invoice" },
         { name: "Invoice Voided", path: "/invoices/voided", description: "Notify customer that an invoice has been voided" }
+    ],
+    "Event Tickets": [
+        { name: "Tickets Purchased", path: "/events/tickets-purchased", description: "Confirm purchase of event tickets, including multiple types and quantities" },
+        { name: "Ticket Redeemed", path: "/events/ticket-redeemed", description: "Notify when a ticket has been redeemed for event entry" },
+        { name: "Event Reminder", path: "/events/reminder", description: "Send a reminder about an upcoming event" },
+        { name: "Ticket Expired", path: "/events/ticket-expired", description: "Inform customer that their event ticket has expired" },
+        { name: "Event Canceled", path: "/events/canceled", description: "Notify ticket holders about event cancellation" }
     ]
 };
