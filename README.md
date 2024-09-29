@@ -37,6 +37,8 @@ Our showcase includes templates for:
 | 🏆 **Memberships** | • Membership Upgraded<br>• Membership Expiry Reminder<br>• Membership Expired<br>• Membership Level Up<br>• Membership Rewards Received |
 | 📂 **Projects** | • Project Invitation<br>• Task Assignment<br>• Task Mention<br>• Task Due Reminder<br>• Project Archived<br>• Project Deleted<br>• Monthly Tasks Report |
 | 💳 **Invoices** | • Invoice Issued<br>• Invoice Paid<br>• Invoice Partially Paid<br>• Invoice Overdue<br>• Invoice Voided |
+| 💳 **E-Wallet** | • Top-up Confirmation<br>• Withdrawal Confirmation<br>• Transfer Notification<br>• Transaction Receipt |
+| 🎫 **Event Tickets** | • Tickets Purchased<br>• Ticket Redeemed<br>• Event Reminder<br>• Ticket Expired<br>• Event Canceled |
 
 ## 🚀 Getting Started
 
@@ -91,7 +93,8 @@ To install and set up the project locally, follow these steps:
 - **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 - **MJML**: A markup language designed to reduce the pain of coding responsive email templates.
-
+- **Prism-react-renderer**: A syntax highlighter for React.
+- **Heroicons**: Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.
 
 ## 📬 Contact
 
