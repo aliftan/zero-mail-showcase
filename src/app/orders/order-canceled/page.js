@@ -10,7 +10,7 @@ const orderCanceledMjml = `
     </mj-attributes>
     <mj-style>
       .product-item td {
-        vertical-align: middle;
+        vertical-align: top;
       }
     </mj-style>
   </mj-head>
@@ -24,7 +24,7 @@ const orderCanceledMjml = `
     <mj-section background-color="#ffffff" padding-top="40px" padding-bottom="40px">
       <mj-column>
         <mj-text font-size="28px" color="#1a2b49" align="center" font-weight="bold">Order Cancellation</mj-text>
-        <mj-text font-size="16px" color="#555555">
+        <mj-text font-size="16px" color="#555555" padding-top="30px">
           Dear {{customerName}},
           <br><br>
           We're writing to confirm that your order #{{orderNumber}} has been canceled as requested.
@@ -46,7 +46,13 @@ const orderCanceledMjml = `
               <table>
                 <tr>
                   <td><img src="https://via.placeholder.com/80x80" width="80" height="80" /></td>
-                  <td style="padding-left: 15px;">Product 1</td>
+                  <td style="padding-left: 15px;">
+                    Product 1
+                    <br>
+                    <span style="font-size: 12px; color: #888;">Variant: Large, Blue</span>
+                    <br>
+                    <span style="font-size: 12px; color: #888;">Note: Gift wrap requested</span>
+                  </td>
                 </tr>
               </table>
             </td>
@@ -58,7 +64,13 @@ const orderCanceledMjml = `
               <table>
                 <tr>
                   <td><img src="https://via.placeholder.com/80x80" width="80" height="80" /></td>
-                  <td style="padding-left: 15px;">Product 2</td>
+                  <td style="padding-left: 15px;">
+                    Product 2
+                    <br>
+                    <span style="font-size: 12px; color: #888;">Variant: Medium, Red</span>
+                    <br>
+                    <span style="font-size: 12px; color: #888;">Note: None</span>
+                  </td>
                 </tr>
               </table>
             </td>
@@ -85,13 +97,19 @@ const orderCanceledMjml = `
             <td style="padding: 0 15px 0 0;">Tax:</td>
             <td style="padding: 0 0 0 15px;">$9.50</td>
           </tr>
+          <tr>
+            <td style="padding: 0 15px 0 0;">Discount:</td>
+            <td style="padding: 0 0 0 15px;">-$10.00</td>
+          </tr>
           <tr style="border-top:1px solid #ecedee;">
             <td style="padding: 5px 15px 0 0;"><strong>Total Refund Amount:</strong></td>
-            <td style="padding: 5px 0 0 15px;"><strong>$125.46</strong></td>
+            <td style="padding: 5px 0 0 15px;"><strong>$115.46</strong></td>
           </tr>
         </mj-table>
         <mj-text>
           <strong>Refund Method:</strong> {{refundMethod}}
+          <br>
+          <strong>Promo Code Used:</strong> SUMMER10 (10% off) - This discount has been reversed.
           <br><br>
           If you've been charged for this order, you will receive a refund within 3-5 business days.
         </mj-text>

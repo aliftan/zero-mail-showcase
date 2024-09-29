@@ -10,7 +10,7 @@ const orderPlacedMjml = `
     </mj-attributes>
     <mj-style>
       .product-item td {
-        vertical-align: middle;
+        vertical-align: top;
       }
     </mj-style>
   </mj-head>
@@ -24,7 +24,7 @@ const orderPlacedMjml = `
     <mj-section background-color="#ffffff" padding-top="40px" padding-bottom="40px">
       <mj-column>
         <mj-text font-size="28px" color="#1a2b49" align="center" font-weight="bold">Order Received</mj-text>
-        <mj-text font-size="16px" color="#555555">
+        <mj-text font-size="16px" color="#555555" padding-top="30px">
           Dear {{customerName}},
           <br><br>
           Thank you for your order! We've received your order #{{orderNumber}} and are processing it now.
@@ -46,7 +46,13 @@ const orderPlacedMjml = `
               <table>
                 <tr>
                   <td><img src="https://via.placeholder.com/80x80" width="80" height="80" /></td>
-                  <td style="padding-left: 15px;">Product 1</td>
+                  <td style="padding-left: 15px;">
+                    Product 1
+                    <br>
+                    <span style="font-size: 12px; color: #888;">Variant: Large, Blue</span>
+                    <br>
+                    <span style="font-size: 12px; color: #888;">Note: Gift wrap requested</span>
+                  </td>
                 </tr>
               </table>
             </td>
@@ -58,7 +64,13 @@ const orderPlacedMjml = `
               <table>
                 <tr>
                   <td><img src="https://via.placeholder.com/80x80" width="80" height="80" /></td>
-                  <td style="padding-left: 15px;">Product 2</td>
+                  <td style="padding-left: 15px;">
+                    Product 2
+                    <br>
+                    <span style="font-size: 12px; color: #888;">Variant: Medium, Red</span>
+                    <br>
+                    <span style="font-size: 12px; color: #888;">Note: None</span>
+                  </td>
                 </tr>
               </table>
             </td>
@@ -104,9 +116,13 @@ const orderPlacedMjml = `
             <td style="padding: 0 15px 0 0;">Estimated Tax:</td>
             <td style="padding: 0 0 0 15px;">$9.50</td>
           </tr>
+          <tr>
+            <td style="padding: 0 15px 0 0;">Discount:</td>
+            <td style="padding: 0 0 0 15px;">-$10.00</td>
+          </tr>
           <tr style="border-top:1px solid #ecedee;">
             <td style="padding: 5px 15px 0 0;"><strong>Total:</strong></td>
-            <td style="padding: 5px 0 0 15px;"><strong>$125.46</strong></td>
+            <td style="padding: 5px 0 0 15px;"><strong>$115.46</strong></td>
           </tr>
         </mj-table>
       </mj-column>
@@ -118,6 +134,8 @@ const orderPlacedMjml = `
           <strong>Payment Method:</strong> {{paymentMethod}}
           <br>
           <strong>Estimated Delivery Date:</strong> {{estimatedDeliveryDate}}
+          <br>
+          <strong>Promo Code Used:</strong> SUMMER10 (10% off)
         </mj-text>
         <mj-text>We'll send you another email when your order ships.</mj-text>
         <mj-button background-color="#e74c3c" color="#ffffff" href="{{orderDetailsUrl}}">View Order Details</mj-button>
