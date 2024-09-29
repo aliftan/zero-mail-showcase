@@ -8,9 +8,9 @@ const passwordResetMjml = `
     </mj-attributes>
   </mj-head>
   <mj-body background-color="#f4f4f4">
-    <mj-section padding-top="20px" padding-bottom="20px">
+     <mj-section padding-bottom="0" background-color="#1a2b49">
       <mj-column width="100%">
-        <mj-image src="https://via.placeholder.com/150x50" alt="Logo" align="center" width="150px" />
+        <mj-image src="https://via.placeholder.com/200x50/1a2b49/ffffff?text=Your+Logo" alt="Logo" align="center" width="200px" />
       </mj-column>
     </mj-section>
     
@@ -52,11 +52,11 @@ const passwordResetMjml = `
 `;
 
 export default function PasswordResetPage() {
-    return (
-        <EmailTemplatePage
-            moduleName="Account Management"
-            templateName="Password Reset"
-            mjmlContent={passwordResetMjml}
-        />
-    );
+  return (
+    <EmailTemplatePage
+      moduleName="Account Management"
+      templateName="Password Reset"
+      mjmlContent={passwordResetMjml}
+    />
+  );
 }
