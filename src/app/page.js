@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Header from '@/components/Header';
 import { emailTemplates } from './emailTemplates';
 import Footer from '@/components/Footer';
@@ -11,9 +11,24 @@ export default function Home() {
   const [activeModule, setActiveModule] = useState(sortedModules[0]);
   const router = useRouter();
 
+  useEffect(() => {
+    // Set initial active module based on the current path
+    const path = window.location.pathname.slice(1);
+    const matchedModule = sortedModules.find(module => emailTemplates[module].modulePath.slice(1) === path);
+    if (matchedModule) {
+      setActiveModule(matchedModule);
+    }
+  }, [sortedModules]);
+
   const sortedTemplates = useMemo(() => {
-    return emailTemplates[activeModule].sort((a, b) => a.name.localeCompare(b.name));
+    return emailTemplates[activeModule].templates.sort((a, b) => a.name.localeCompare(b.name));
   }, [activeModule]);
+
+  const handleModuleClick = (module) => {
+    setActiveModule(module);
+    const path = emailTemplates[module].modulePath;
+    window.history.pushState(null, '', path);
+  };
 
   const handleViewTemplate = (path) => {
     router.push(path);
@@ -28,7 +43,7 @@ export default function Home() {
           {sortedModules.map((module) => (
             <li key={module}>
               <button
-                onClick={() => setActiveModule(module)}
+                onClick={() => handleModuleClick(module)}
                 className={`px-6 py-3 rounded-full text-sm font-medium shadow-sm duration-300 ease-in-out transition hover:scale-110 border border-gray-200
                   ${activeModule === module
                     ? 'bg-blue-500 text-white shadow-lg scale-105'
