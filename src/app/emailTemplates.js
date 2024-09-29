@@ -56,5 +56,22 @@ export const emailTemplates = {
         { name: "Voucher/Promo Code Issued", path: "/vouchers/code-issued", description: "Deliver a new voucher or promo code to customers" },
         { name: "Voucher/Promo Code Expiry Reminder", path: "/vouchers/expiry-reminder", description: "Remind customers of soon-to-expire vouchers" },
         { name: "Successful Voucher/Promo Code Usage", path: "/vouchers/code-used", description: "Confirm successful application of a voucher or promo code" },
+        { name: "Voucher/Promo Code Expired", path: "/vouchers/code-expired", description: "Notify customers that a voucher or promo code has expired" }
     ],
+    "Appointment Bookings": [
+        { name: "Appointment Sent", path: "/appointments/sent", description: "Notify customer that an appointment has been scheduled" },
+        { name: "Appointment Confirmed", path: "/appointments/confirmed", description: "Confirm the scheduled appointment with the customer" },
+        { name: "Appointment Rescheduled", path: "/appointments/rescheduled", description: "Inform customer about a rescheduled appointment" },
+        { name: "Appointment Reschedule Requested", path: "/appointments/reschedule-requested", description: "Notify about a customer's request to reschedule an appointment" },
+        { name: "Appointment Canceled", path: "/appointments/canceled", description: "Inform customer about a canceled appointment" },
+        { name: "Appointment Completed", path: "/appointments/completed", description: "Notify customer that an appointment has been completed" },
+        { name: "Appointment Review Request", path: "/appointments/review-request", description: "Request a review from the customer after a completed appointment" }
+    ],
+    "Memberships": [
+        { name: "Membership Upgraded", path: "/memberships/upgraded", description: "Notify customer about a membership upgrade" },
+        { name: "Membership Expiry Reminder", path: "/memberships/expiry-reminder", description: "Remind customer of an upcoming membership expiration" },
+        { name: "Membership Expired", path: "/memberships/expired", description: "Inform customer that their membership has expired" },
+        { name: "Membership Level Up", path: "/memberships/level-up", description: "Congratulate customer on reaching a new membership level" },
+        { name: "Membership Rewards Received", path: "/memberships/rewards-received", description: "Notify customer of rewards received from their membership" }
+    ]
 };
