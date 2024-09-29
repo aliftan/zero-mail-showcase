@@ -73,5 +73,21 @@ export const emailTemplates = {
         { name: "Membership Expired", path: "/memberships/expired", description: "Inform customer that their membership has expired" },
         { name: "Membership Level Up", path: "/memberships/level-up", description: "Congratulate customer on reaching a new membership level" },
         { name: "Membership Rewards Received", path: "/memberships/rewards-received", description: "Notify customer of rewards received from their membership" }
+    ],
+    "Projects": [
+        { name: "Project Invitation", path: "/projects/invite", description: "Invite a user to join a project" },
+        { name: "Task Assignment", path: "/projects/task-assign", description: "Notify user of a new task assignment" },
+        { name: "Task Mention", path: "/projects/task-mention", description: "Alert user when mentioned in a task" },
+        { name: "Task Due Reminder", path: "/projects/task-due-reminder", description: "Remind user of an upcoming task due date" },
+        { name: "Project Archived", path: "/projects/archived", description: "Inform user that a project has been archived" },
+        { name: "Project Deleted", path: "/projects/deleted", description: "Notify user that a project has been deleted" },
+        { name: "Monthly Tasks Report", path: "/projects/monthly-report", description: "Send a monthly report of tasks and their statuses" }
+    ],
+    "Invoices": [
+        { name: "Invoice Issued", path: "/invoices/issued", description: "Notify customer that a new invoice has been issued" },
+        { name: "Invoice Paid", path: "/invoices/paid", description: "Confirm that an invoice has been paid in full" },
+        { name: "Invoice Partially Paid", path: "/invoices/partially-paid", description: "Inform customer about a partial payment on an invoice" },
+        { name: "Invoice Overdue", path: "/invoices/overdue", description: "Alert customer about an overdue invoice" },
+        { name: "Invoice Voided", path: "/invoices/voided", description: "Notify customer that an invoice has been voided" }
     ]
 };
