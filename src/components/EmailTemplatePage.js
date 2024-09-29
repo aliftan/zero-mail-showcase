@@ -5,7 +5,7 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import Header from '@/components/Header';
 import { Highlight, themes } from 'prism-react-renderer';
-import { ArrowLeftIcon, CodeBracketIcon } from '@heroicons/react/24/outline';
+import { ArrowLeftIcon, CodeBracketIcon, DocumentDuplicateIcon } from '@heroicons/react/24/outline';
 import Footer from './Footer';
 
 const MjmlRenderer = dynamic(() => import('@/components/MjmlRenderer'), { ssr: false });
@@ -68,8 +68,9 @@ export default function EmailTemplatePage({ moduleName, templateName, mjmlConten
                             <div className="flex space-x-3">
                                 <button
                                     onClick={copyToClipboard}
-                                    className="px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors duration-300 text-sm font-medium"
+                                    className="px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors duration-300 text-sm font-medium flex items-center"
                                 >
+                                    <DocumentDuplicateIcon className="h-5 w-5 mr-2" />
                                     Copy Code
                                 </button>
                                 <button
@@ -80,15 +81,18 @@ export default function EmailTemplatePage({ moduleName, templateName, mjmlConten
                                 </button>
                             </div>
                         </div>
-                        <div className="p-6 max-h-[calc(80vh-100px)] overflow-auto">
+                        <div className="p-6 max-h-[calc(80vh-100px)] overflow-auto bg-gray-900">
                             <Highlight theme={themes.vsDark} code={mjmlContent} language="markup">
                                 {({ className, style, tokens, getLineProps, getTokenProps }) => (
-                                    <pre className="rounded-lg" style={style}>
+                                    <pre className="rounded-lg text-sm" style={{ ...style, background: 'transparent' }}>
                                         {tokens.map((line, i) => (
-                                            <div key={i} {...getLineProps({ line, key: i })}>
-                                                {line.map((token, key) => (
-                                                    <span key={key} {...getTokenProps({ token, key })} />
-                                                ))}
+                                            <div key={i} {...getLineProps({ line, key: i })} className="table-row">
+                                                <span className="table-cell text-right pr-4 select-none opacity-50">{i + 1}</span>
+                                                <span className="table-cell">
+                                                    {line.map((token, key) => (
+                                                        <span key={key} {...getTokenProps({ token, key })} />
+                                                    ))}
+                                                </span>
                                             </div>
                                         ))}
                                     </pre>
