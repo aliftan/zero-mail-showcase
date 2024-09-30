@@ -1,7 +1,29 @@
+import Link from 'next/link';
+
 export default function Header() {
+    const gradientStyle = {
+        backgroundImage: 'linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899, #3b82f6)',
+        backgroundSize: '300% 300%',
+        animation: 'gradientAnimation 6s ease infinite',
+    };
+
     return (
         <header className="text-center mb-12">
-            <h1 className="text-5xl font-bold mb-3 text-gray-800">Zero Mail Showcase</h1>
+            <style jsx>{`
+                @keyframes gradientAnimation {
+                    0% { background-position: 0% 50%; }
+                    50% { background-position: 100% 50%; }
+                    100% { background-position: 0% 50%; }
+                }
+            `}</style>
+            <Link href="/" className="inline-block">
+                <h1
+                    className="text-5xl font-bold mb-3 text-transparent bg-clip-text transition-transform duration-300 ease-in-out hover:scale-105"
+                    style={gradientStyle}
+                >
+                    Zero Mail Showcase
+                </h1>
+            </Link>
             <p className="text-xl text-gray-600 mb-6">A collection of email templates for various scenarios</p>
             <a
                 href="https://github.com/aliftan/zero-mail-showcase"

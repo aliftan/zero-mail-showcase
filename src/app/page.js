@@ -12,7 +12,6 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    // Set initial active module based on the current path
     const path = window.location.pathname.slice(1);
     const matchedModule = sortedModules.find(module => emailTemplates[module].modulePath.slice(1) === path);
     if (matchedModule) {
@@ -35,20 +34,20 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen p-20 font-sans bg-gray-50">
+    <div className="min-h-screen p-4 sm:p-6 md:p-8 lg:p-12 font-sans bg-gray-50">
       <Header />
 
-      <nav className="mb-12">
-        <ul className="flex flex-wrap justify-center gap-4">
+      <nav className="mb-6 sm:mb-8 overflow-x-auto">
+        <ul className="flex flex-nowrap justify-start sm:justify-center gap-2 sm:gap-4 pb-2 sm:pb-0">
           {sortedModules.map((module) => (
-            <li key={module}>
+            <li key={module} className="flex-shrink-0">
               <button
                 onClick={() => handleModuleClick(module)}
-                className={`px-6 py-3 rounded-full text-sm font-medium shadow-sm duration-300 ease-in-out transition hover:scale-110 border border-gray-200
+                className={`px-3 py-2 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium shadow-sm transition-all duration-300 ease-in-out hover:shadow-md border border-gray-200
                   ${activeModule === module
-                    ? 'bg-blue-500 text-white shadow-lg scale-105'
+                    ? 'bg-blue-500 text-white shadow-lg'
                     : 'bg-white text-gray-700 hover:bg-gray-100'
-                  } hover:shadow-md`}
+                  }`}
               >
                 {module}
               </button>
@@ -57,14 +56,14 @@ export default function Home() {
         </ul>
       </nav>
 
-      <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {sortedTemplates.map((template) => (
-          <div key={template.name} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 ease-in-out hover:scale-110">
-            <h2 className="text-xl font-semibold mb-3 text-gray-800">{template.name}</h2>
-            <p className="text-gray-600 mb-4 h-12 overflow-hidden">{template.description}</p>
+          <div key={template.name} className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 shadow-sm hover:shadow-md transition-all duration-300 ease-in-out">
+            <h2 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gray-800">{template.name}</h2>
+            <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 h-12 overflow-hidden">{template.description}</p>
             <button
               onClick={() => handleViewTemplate(template.path)}
-              className="inline-block px-5 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors duration-300 ease-in-out text-sm font-medium"
+              className="inline-block px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors duration-300 ease-in-out text-xs sm:text-sm font-medium"
             >
               View Template
             </button>
